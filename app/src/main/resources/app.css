@@ -1,0 +1,231 @@
+* {
+  -fx-primary-color: #2196f3;
+  -fx-primary-color-light: #6ec6ff;
+  -fx-primary-color-dark: #0069c0;
+
+  -fx-error-color: #f44336;
+  -fx-error-color-dark: #b71c1c;
+}
+
+.root {
+  -fx-background-color:#fafafa;
+  -fx-font-family: "Arial";
+  -fx-font-size: 1.25em;
+  -fx-text-fill: #333;
+}
+
+.sidebar {
+  -fx-background-color: #f5f5f5;
+  -fx-border-style: none solid none none;
+  -fx-border-width: 0 1 0 0;
+  -fx-border-color: #eee;
+}
+
+.top-bar {
+  -fx-background-color: #f5f5f5;
+  -fx-border-style: none none solid none;
+  -fx-border-width: 0 0 1 0;
+  -fx-border-color: #eee;
+}
+
+.button {
+  -fx-background-color: -fx-primary-color;
+  -fx-text-fill: #fafafa;
+  -fx-padding: 10 20;
+  -fx-background-radius: 20;
+  -fx-font-family: "Arial";
+  -fx-font-weight: bold;
+}
+.button:hover, .button:focused {
+  -fx-background-color: -fx-primary-color-dark;
+}
+.delete-button {
+  -fx-background-color: -fx-error-color;
+}
+.delete-button:hover, .delete-button:focused {
+  -fx-background-color: -fx-error-color-dark;
+}
+.big-button {
+  -fx-font-size: 1.5em;
+  -fx-padding: 10 25;
+  -fx-background-radius: 30;
+}
+.small-button {
+  -fx-font-size: 0.8em;
+  -fx-padding: 2 7;
+  -fx-background-radius: 10;
+}
+.list-cell {
+  -fx-padding: 10;
+  -fx-font-size: 1em;
+}
+.list-view:focused > .virtual-flow > .clipped-container > .sheet > .list-cell:filled:selected {
+  -fx-background-color: -fx-primary-color;
+}
+.list-cell .delete-button, .list-cell .edit-button {
+  -fx-font-size: 0.75em;
+  -fx-padding: 5;
+}
+
+.role-label {
+  -fx-background-color: -fx-primary-color;
+  -fx-text-fill: #fff;
+  -fx-font-size: 0.75em;
+  -fx-font-weight: bold;
+  -fx-padding: 5;
+  -fx-background-radius: 10;
+}
+.username-label {
+  -fx-font-size: 1.25em;
+  -fx-font-weight: bold;
+  -fx-padding: 5;
+}
+
+.accordion {
+  -fx-background-color: transparent;
+  -fx-border-style: none none solid none;
+  -fx-border-width: 0 0 1 0;
+  -fx-border-color: #eee;
+}
+.accordion .titled-pane {
+  -fx-background-color: transparent;
+  -fx-border-style: solid none none none;
+  -fx-border-width: 1 0 0 0;
+  -fx-border-color: #eee;
+  -fx-padding: 0;
+}
+.accordion .titled-pane.first-titled-pane {
+  -fx-border-style: none;
+  -fx-border-width: 0;
+}
+
+.titled-pane > .title {
+  -fx-background-color: transparent;
+  -fx-background-insets: 0;
+  -fx-background-radius: 0;
+  -fx-padding: 10;
+  -fx-font-size: 1.25em;
+}
+.titled-pane:collapsed > .title:hover, .titled-pane:focused > .title {
+  -fx-background-color: #eee;
+}
+.titled-pane:collapsed > .title {
+  -fx-background-color: #f5f5f5;
+}
+
+.titled-pane:collapsed > .title > .arrow-button .arrow {
+  -fx-background-color: #333;
+}
+.titled-pane:focused > .title > .arrow-button .arrow, .titled-pane > .title > .arrow-button .arrow {
+  -fx-background-color: -fx-primary-color;
+  -fx-effect: null;
+}
+
+.titled-pane > *.content {
+  -fx-background-color: transparent;
+  -fx-background-insets: 0;
+  -fx-padding: 0;
+  -fx-border-width: 0;
+ }
+
+.toggle-button.sb-button {
+  -fx-background-color: transparent;
+  -fx-padding: 10 10 10 30;
+  -fx-background-radius: 0;
+  -fx-border-style: none solid none none;
+  -fx-border-width: 0 3 0 0;
+  -fx-border-color: transparent;
+}
+.toggle-button.sb-button:selected {
+  -fx-background-color: #eee;
+  -fx-border-color: -fx-primary-color;
+}
+.toggle-button.sb-button:focused {
+  -fx-background-color: #eee;
+}
+
+.date-picker-popup .button {
+  -fx-background-color: transparent;
+  -fx-padding: 5 10;
+}
+
+.filter-text {
+  -fx-font-style: italic;
+  -fx-font-size: 0.75em;
+}
+
+.card {
+  -fx-background-color: #f5f5f5;
+  -fx-border-style: solid;
+  -fx-border-width: 1;
+  -fx-border-color: #eee;
+  -fx-padding: 10;
+}
+
+.toggle-button.left-toggle, .toggle-button.right-toggle {
+  -fx-background-color: #ddd;
+  -fx-padding: 10 20;
+  -fx-font-family: "Arial";
+  -fx-font-weight: bold;
+  -fx-border-style: none;
+  -fx-border-width: 0;
+}
+.toggle-button.left-toggle {
+  -fx-border-style: none solid none none;
+  -fx-border-width: 0 1 0 0;
+  -fx-border-color: #eee;
+  -fx-background-radius: 10 0 0 10;
+}
+.toggle-button.right-toggle {
+  -fx-background-radius: 0 10 10 0;
+}
+.toggle-button.left-toggle:selected, .toggle-button.right-toggle:selected {
+  -fx-background-color: -fx-primary-color;
+  -fx-text-fill: #fff;
+  -fx-border-color: -fx-primary-color;
+}
+.toggle-button.left-toggle:focused, .toggle-button.right-toggle:focused {
+  -fx-underline: true;
+}
+
+.combo.combo-box-base,
+.combo.combo-box-base:editable > .arrow-button {
+  -fx-background-radius: 10;
+}
+.combo.combo-box > .list-cell {
+  -fx-background-radius: 10 0 0 10;
+}
+.combo.combo-box-base > .arrow-button {
+  -fx-background-radius: 0 10 10 0;
+}
+.combo.combo-box > .list-cell, .combo.combo-box-base > .arrow-button {
+  -fx-background-color: #ddd;
+}
+.combo.combo-box:hover > .list-cell, .combo.combo-box:hover > .arrow-button,
+.combo.combo-box-base:showing > .list-cell, .combo.combo-box-base:showing > .arrow-button {
+  -fx-background-color: #eee;
+}
+.combo-box-popup > .list-view > .virtual-flow > .clipped-container > .sheet > .list-cell:filled:hover {
+  -fx-background-color: -fx-primary-color;
+}
+
+.popup {
+  -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5, 0, 1, 1);
+}
+
+.short-field {
+  -fx-font-size: 1.75em;
+  -fx-alignment: center;
+}
+
+.text-field#success {
+  -fx-focus-color: green;
+}
+.text-field#error {
+  -fx-focus-color: red;
+}
+
+#errorLabel {
+  /* Setting textcolor of all errorlabels to red */
+  -fx-text-fill: #ff0000;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+  <link href="new-design.css" rel="stylesheet">
+</head>
+<body>
+  <div class="top-bar">
+    <div class="back-forward">
+      <a class="icon-button" href="#"><span class="material-icons vb">arrow_back_ios</span></a>
+      <a class="icon-button inactive" href="#"><span class="material-icons vb">arrow_forward_ios</span></a>
+    </div>
+    <h1 class="title">Add room</h1>
+  </div>
+
+  <div class="sidebar">
+    <div class="role">ADMIN</div>
+    <div class="name">oenstrom</div>
+
+    <a class="sidebar-button" href="#">Bookings</a>
+    <a class="sidebar-button" href="#">Rooms</a>
+      <a class="sidebar-sub-button active" href="#">Add room</a>
+      <a class="sidebar-sub-button" href="#">View rooms</a>
+    <a class="sidebar-button" href="#">Customers</a>
+    <a class="sidebar-button" href="#">Users</a>
+
+    <div class="bottom-buttons">
+      <a class="button sidebar-bottom-button" href="#">Settings</a>
+      <a class="button sidebar-bottom-button" href="#">Sign out</a>
+    </div>
+  </div>
+
+  <main>
+    <form>
+      <label for="id">Room number:
+        <input tabindex="1" id="id" type="text" placeholder="Room number">
+      </label>
+
+      <label for="location">Location:
+        <input tabindex="4" id="location" type="text" placeholder="Location">
+      </label>
+
+      <label for="beds">Number of beds:
+        <input tabindex="2" id="beds" type="text" placeholder="Number of beds">
+      </label>
+
+      <label for="information">Other information:
+        <input tabindex="5" id="information" type="text" placeholder="Other information">
+      </label>
+
+      <label for="size">Room size:
+        <input tabindex="3" id="size" type="text" placeholder="Room size">
+      </label>
+    </form>
+    <a href="#" tabindex="6" class="button">Save</a>
+  </main>
+</body>
+</html>
